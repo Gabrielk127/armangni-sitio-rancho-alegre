@@ -8,12 +8,12 @@ export default function LeadStrip() {
         <div>
           <p className="kicker !text-taupe">Visite o sítio</p>
           <p className="display mt-3 text-[clamp(1.05rem,2.4vw,1.35rem)] leading-[1.3] text-white">
-            Gostou da localização?
+            Gostou do que viu?
             <br />
             <span className="italic normal-case text-taupe">Venha conhecer.</span>
           </p>
         </div>
-        <LeadForm variant="inline" source="form_localizacao" submitLabel="Quero visitar" />
+        <LeadForm variant="inline" source="form_galeria" submitLabel="Quero visitar" />
       </div>
     </section>
   );

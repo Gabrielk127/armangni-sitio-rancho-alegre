@@ -31,7 +31,6 @@ export const PROPERTY = {
   areaConstruida: 800,
 } as const;
 
-export const MAPS_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(PROPERTY.mapsQuery)}&z=11&output=embed`;
 
 export function whatsappLink(message = "Olá! Vi o site do Sítio Rancho Alegre, em Porto Feliz, e quero mais informações.") {
   return `https://wa.me/${BRAND.phone}?text=${encodeURIComponent(message)}`;
@@ -39,7 +38,7 @@ export function whatsappLink(message = "Olá! Vi o site do Sítio Rancho Alegre,
 
 export const NAV = [
   { label: "Início", href: "#inicio" },
-  { label: "Localização", href: "#localizacao" },
+  { label: "Galeria", href: "#fotos" },
   { label: "Casa-sede", href: "#casa" },
   { label: "Estrutura", href: "#estrutura" },
   { label: "Terreno", href: "#terreno" },
@@ -145,10 +144,31 @@ export const TERRAIN = [
   "Relevo levemente ondulado, com bom aproveitamento do terreno",
 ] as const;
 
-/** Distâncias de Porto Feliz. `angle` = direção aproximada (graus, 0 = norte), `km` real. */
+/** Distâncias de Porto Feliz (apresentação do imóvel). */
 export const DISTANCES = [
-  { name: "Fazenda Boa Vista", km: 10, angle: 200 },
-  { name: "Sorocaba", km: 24, angle: 160 },
-  { name: "Campinas", km: 58, angle: 50 },
-  { name: "Alphaville / Barueri", km: 67, angle: 110 },
+  { name: "Fazenda Boa Vista", km: 10 },
+  { name: "Sorocaba", km: 24 },
+  { name: "Campinas", km: 58 },
+  { name: "Alphaville / Barueri", km: 67 },
+] as const;
+
+/** Galeria completa (todas as fotos da apresentação) */
+export const PHOTOS = [
+  { src: img("aerea.jpg"), alt: "Vista aérea da propriedade", cat: "Terreno" },
+  { src: img("casa-fachada.jpg"), alt: "Fachada principal da casa-sede", cat: "Casa-sede" },
+  { src: img("sala-jantar.jpg"), alt: "Sala de jantar", cat: "Casa-sede" },
+  { src: img("cozinha-gourmet.jpg"), alt: "Cozinha e área gourmet", cat: "Casa-sede" },
+  { src: img("galpao-queijaria.jpg"), alt: "Vista geral do galpão / queijaria", cat: "Estrutura" },
+  { src: img("sala-estar.jpg"), alt: "Sala de estar", cat: "Casa-sede" },
+  { src: img("pastagens.jpg"), alt: "Visão geral das pastagens", cat: "Terreno" },
+  { src: img("capril-interior.jpg"), alt: "Interior do capril", cat: "Estrutura" },
+  { src: img("dormitorio.jpg"), alt: "Dormitório casal", cat: "Casa-sede" },
+  { src: img("horta.jpg"), alt: "Horta cercada", cat: "Terreno" },
+  { src: img("capril-fachada.jpg"), alt: "Fachada do capril", cat: "Estrutura" },
+  { src: img("sala-estar-2.jpg"), alt: "Sala de estar", cat: "Casa-sede" },
+  { src: img("pastagens-aerea.jpg"), alt: "Vista aérea das pastagens", cat: "Terreno" },
+  { src: img("casa-caseiro.jpg"), alt: "Fachada da casa de caseiro", cat: "Estrutura" },
+  { src: img("banheiro.jpg"), alt: "Banheiro", cat: "Casa-sede" },
+  { src: img("horta-2.jpg"), alt: "Horta cercada", cat: "Terreno" },
+  { src: img("poco-galinheiro.jpg"), alt: "Poço artesiano, caixa d'água e galinheiro", cat: "Estrutura" },
 ] as const;

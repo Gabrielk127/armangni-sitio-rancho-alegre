@@ -4,7 +4,7 @@ import FloatingCta from "@/components/floating-cta";
 import Footer from "@/components/footer";
 import Hero from "@/components/sections/hero";
 import Numbers from "@/components/sections/numbers";
-import Location from "@/components/sections/location";
+import PhotoGallery from "@/components/sections/photo-gallery";
 import LeadStrip from "@/components/sections/lead-strip";
 import House from "@/components/sections/house";
 import HouseGallery from "@/components/sections/house-gallery";
@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <Numbers />
-        <Location />
+        <PhotoGallery />
         <LeadStrip />
         <House />
         <HouseGallery />

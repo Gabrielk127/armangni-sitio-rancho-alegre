@@ -23,7 +23,7 @@ No deploy, cadastre as três variáveis na Vercel (modelo em `.env.example`).
 
 A página tem três pontos de captura, todos nessa rota:
 
-1. Faixa logo após a localização (`lead-strip.tsx`).
+1. Faixa logo após a galeria de fotos (`lead-strip.tsx`).
 2. Seção "Valor e condições" no meio da página (`lead-mid.tsx`).
 3. "Agende sua visita" no final (`lead.tsx`).
 
@@ -38,5 +38,4 @@ A página tem três pontos de captura, todos nessa rota:
 - As fotos foram extraídas do PDF e têm cerca de 700 px de largura (só a vista aérea e a sala de estar são maiores).
   Se houver os arquivos originais, troque em `public/images/sitio/` mantendo os nomes.
 - A apresentação não tem foto do celeiro; o bloco dele aparece só com texto.
-- O radar usa as distâncias do PDF; as direções são aproximadas.
-- O PDF não informa valor nem endereço exato. O mapa mostra Porto Feliz — SP.
+- O PDF não informa valor nem endereço exato. O link "Ver no mapa" abre Porto Feliz — SP.
