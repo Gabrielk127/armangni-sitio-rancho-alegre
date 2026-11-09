@@ -26,6 +26,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sitioranchoalegre.armangniimoveis.com.br"),
   title: "Sítio Rancho Alegre · 4 hectares em Porto Feliz — SP | Armangni Negócios Imobiliários",
   description:
     "Sítio à venda em Porto Feliz — SP: 40.000 m² com casa-sede, queijaria, capril, casa de caseiro e infraestrutura completa (poço artesiano, energia trifásica, fibra ótica). Acesso pelo km 97 da Castelo Branco.",
@@ -34,7 +35,9 @@ export const metadata: Metadata = {
     description: "40.000 m² de campo com 800 m² construídos e infraestrutura completa. Atendimento Armangni.",
     locale: "pt_BR",
     type: "website",
+    siteName: "Armangni Negócios Imobiliários",
   },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = {
