@@ -76,9 +76,6 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {BRAND.name} · {BRAND.creci} · Todos os direitos reservados.
           </p>
-          <a href="https://techdeploy.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-            Desenvolvido por TechDeploy
-          </a>
         </div>
       </div>
     </footer>
